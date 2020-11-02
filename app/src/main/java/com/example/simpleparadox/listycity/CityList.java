@@ -57,16 +57,16 @@ public class CityList {
      *      Candidate city to delete
      */
     public void delete(City city) {
-//        if (!hasCity(city)) {
-//            throw new IllegalArgumentException();
-//        }
-//
-//        for (City c : cities) {
-//            if (c.compareTo(city) == 0){
-//                cities.remove(c);
-//                break;
-//            }
-//        }
+        if (!hasCity(city)) {
+            throw new IllegalArgumentException();
+        }
+
+        for (City c : cities) {
+            if (c.compareTo(city) == 0){
+                cities.remove(c);
+                break;
+            }
+        }
     }
 
     /**
